@@ -1,2 +1,32 @@
 ahsjidhsjhfdjsihssssssss rissia
 bombbbb
+package adittion;
+
+
+
+		public class junit {
+
+		    public int divide(int dividend, int divisor) {
+		       if (divisor == 0) {
+		            throw new ArithmeticException("Cannot divide by zero");
+		        }
+		        return dividend / divisor;
+		    }
+		}
+		
+		package adittion;
+
+		import static org.junit.jupiter.api.Assertions.*;
+
+		import org.junit.jupiter.api.Test;
+
+		class junitTest {
+
+		  
+		    @Test
+		    void testdivide() {
+		        junit a = new junit();
+		        int r = a.divide(30, 3);
+		        assertEquals(10, r);
+		    }
+		}
